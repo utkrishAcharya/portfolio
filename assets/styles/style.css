@@ -1,0 +1,107 @@
+/* Custom styles for portfolio, for fallback or additional tweaks */
+/* Custom fallback styles for portfolio */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+/* Custom theme variables for Tailwind-like colors */
+/* Red color palette for high contrast in light mode */
+:root {
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #ef4444;
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+}
+
+.text-primary-600 { color: var(--color-primary-600); }
+.text-primary-400 { color: var(--color-primary-400); }
+.bg-primary-500 { background-color: var(--color-primary-500); }
+.bg-primary-600 { background-color: var(--color-primary-600); }
+.text-clifford { color: var(--color-primary-700); }
+
+/* Tag styles for skills and expertise */
+.tag {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-800);
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+body.dark .tag {
+  background-color: var(--color-primary-900);
+  color: var(--color-primary-300);
+}
+
+/* Section titles and accent text */
+.section-title {
+  color: var(--color-primary-600);
+}
+body.dark .section-title {
+  color: var(--color-primary-400);
+}
+
+/* Button accent colors */
+.bg-primary-600 {
+  background-color: var(--color-primary-600) !important;
+  color: #fff !important;
+}
+.bg-primary-700 {
+  background-color: var(--color-primary-700) !important;
+  color: #fff !important;
+}
+body.dark .bg-primary-600 {
+  background-color: var(--color-primary-400) !important;
+}
+body.dark .bg-primary-700 {
+  background-color: var(--color-primary-300) !important;
+}
+
+/* Link accent colors */
+a.text-primary-600 {
+  color: var(--color-primary-600);
+}
+body.dark a.text-primary-600 {
+  color: var(--color-primary-400);
+}
+
+/* Ensure high contrast for all accent elements in both modes */
+
+img[alt="Profile Photo"] {
+  box-shadow: 0 2px 8px rgba(37,99,235,0.15);
+  transition: box-shadow 0.3s;
+}
+img[alt="Profile Photo"]:hover {
+  box-shadow: 0 4px 16px rgba(37,99,235,0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111827;
+    color: #e5e7eb;
+  }
+}

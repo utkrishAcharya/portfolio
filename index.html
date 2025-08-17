@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utkrish Acharya | ICT Student & Tech Enthusiast</title>
+  <meta name="description" content="Welcome to the portfolio of Utkrish Acharya, a passionate ICT student from Butwal, Nepal, specializing in web technologies and project coordination.">
+  <meta name="author" content="Utkrish Acharya">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://placehold.co/32x32/DC2626/FFFFFF?text=UA" type="image/png">
+
+  <link rel="stylesheet" href="assets/styles/tailwind-theme.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+
+  <!-- Header & Navigation -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-sm transition-all duration-300">
+    <div class="max-w-5xl mx-auto px-6">
+      <nav class="flex items-center justify-between h-20">
+        <!-- Logo Section: Simple text logo with elegant font -->
+        <a href="#" class="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent tracking-tight font-serif">Utkrish</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#about" class="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition">About</a>
+          <a href="#experience" class="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition">Experience</a>
+          <a href="#education" class="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition">Education</a>
+          <a href="#skills" class="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition">Skills</a>
+          <a href="#contact" class="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition">Contact</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button id="theme-toggle" class="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                <svg id="theme-toggle-dark-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-500 dark:text-gray-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-6 pt-24 pb-12">
+    
+    <!-- Hero/About Section -->
+    <section id="about" class="mb-24 scroll-mt-20">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <!-- Profile Image -->
+        <div class="flex-shrink-0">
+          <div class="relative w-64 h-64 lg:w-80 lg:h-80">
+            <img 
+              src="assets/images/IMG_0157.JPG"
+              alt="Utkrish Acharya Profile"
+              class="w-full h-full object-cover rounded-2xl shadow-2xl ring-4 ring-primary-100 dark:ring-primary-900/50"
+            />
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary-500/10 to-transparent"></div>
+          </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="flex-1 text-center lg:text-left">
+          <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            Hi, I'm <span class="text-primary-600 dark:text-primary-500">Utkrish</span>
+          </h1>
+          <p class="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+            A passionate student and aspiring ICT professional from Nepal, dedicated to learning and growing in the field of technology. Currently pursuing my journey in Information and Communication Technology with a focus on administration and project coordination.
+          </p>
+          <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+            <a href="#contact" class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-primary-500/50">
+              Get In Touch
+            </a>
+            <a href="#education" class="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-all duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Experience Section (Adding missing content structure) -->
+    <section id="experience" class="mb-24 scroll-mt-20">
+      <div class="space-y-8">
+        <ul class="space-y-2 text-slate-600 dark:text-slate-300">
+          <li>Provided support for daily academic and administrative tasks, enhancing workflow efficiency.</li>
+          <li>Coordinated events and managed schedules for staff and students.</li>
+          <li>Handled documentation and maintained organized, accessible records.</li>
+          <li>Facilitated communication between departments to improve collaboration on school projects.</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Education -->
+    <section id="education" class="mb-24 scroll-mt-20">
+      <h2 class="section-title flex flex-col items-center justify-center text-center">
+        <!-- Education Icon: Using your custom mortarboard SVG with red fill -->
+        <!-- Place mortarboard.svg in assets/images/ directory -->
+        <img src="assets/images/mortarboard.svg" alt="Education" class="w-8 h-8 text-red-600" style="filter: brightness(0) saturate(100%) invert(17%) sepia(90%) saturate(7495%) hue-rotate(356deg) brightness(91%) contrast(120%);">
+        <span>Education</span>
+      </h2>
+      <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-200 before:to-transparent dark:before:via-gray-700">
+        <!-- Item -->
+        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white dark:border-gray-800 bg-gray-100 dark:bg-gray-700 group-hover:bg-primary-500 text-gray-500 dark:text-gray-400 group-hover:text-white transition-colors duration-300 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </div>
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] card p-4">
+            <h3 class="font-semibold text-gray-900 dark:text-white text-center">Bachelors in ICT (BICT)</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 text-center">Butwal Multiple Campus, Butwal (Admission Pending)</p>
+          </div>
+        </div>
+        <!-- Item -->
+        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white dark:border-gray-800 bg-gray-100 dark:bg-gray-700 group-hover:bg-primary-500 text-gray-500 dark:text-gray-400 group-hover:text-white transition-colors duration-300 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18h.01"></path><path d="M12 6h.01"></path><path d="M12 12h.01"></path></svg>
+          </div>
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] card p-4 overflow-hidden">
+            <h3 class="font-semibold text-gray-900 dark:text-white text-center">+2 NEB (Management)</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 break-words text-center">Shree Shanti Namuna Secondary School, Manigram (2081 B.S. Expected)</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 text-center">Majors: Computer Science, Mathematics</p>
+          </div>
+        </div>
+        <!-- Item -->
+        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white dark:border-gray-800 bg-gray-100 dark:bg-gray-700 group-hover:bg-primary-500 text-gray-500 dark:text-gray-400 group-hover:text-white transition-colors duration-300 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18h.01"></path><path d="M12 6h.01"></path><path d="M12 12h.01"></path></svg>
+          </div>
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] card p-4 overflow-hidden">
+            <h3 class="font-semibold text-gray-900 dark:text-white text-center">Secondary Education (SEE)</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 break-words text-center">Shree Shanti Namuna Secondary School, Manigram (2079 B.S.)</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 text-center">GPA: 3.02</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mb-24 scroll-mt-20">
+      <h2 class="section-title flex flex-col items-center justify-center text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 dark:text-primary-500"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+        <span>Skills & Expertise</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card overflow-hidden">
+          <h3 class="font-semibold text-lg mb-3 text-gray-900 dark:text-white text-center">Technical Skills</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">MS Word</span>
+            <span class="tag">MS Excel</span>
+            <span class="tag">MS PowerPoint</span>
+            <span class="tag">Basic Computer Proficiency</span>
+            <span class="tag">Numerical Analysis</span>
+          </div>
+        </div>
+        <div class="card overflow-hidden">
+          <h3 class="font-semibold text-lg mb-3 text-gray-900 dark:text-white text-center">Professional Skills</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">Project Coordination</span>
+            <span class="tag">Verbal & Written Communication</span>
+            <span class="tag">Teamwork & Leadership</span>
+            <span class="tag">Time Management</span>
+            <span class="tag">Adaptability</span>
+            <span class="tag">Fast Learner</span>
+            <span class="tag">Administration</span>
+          </div>
+        </div>
+        <div class="card md:col-span-2 overflow-hidden">
+          <div class="flex flex-col items-center justify-center mb-3">
+            <img src="assets/images/globe.svg" alt="Languages" class="w-8 h-8 mb-2 text-primary-600 dark:text-primary-500" style="filter: brightness(0) saturate(100%) invert(34%) sepia(99%) saturate(7495%) hue-rotate(175deg) brightness(91%) contrast(120%);">
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white text-center">Languages</h3>
+          </div>
+          <div class="flex flex-wrap justify-center gap-4">
+            <div class="bg-primary-50 dark:bg-primary-900/20 rounded-lg px-6 py-4 shadow-sm flex flex-col items-center min-w-[120px]">
+              <span class="font-bold text-primary-600 dark:text-primary-500 text-lg">Nepali</span>
+              <span class="text-slate-600 dark:text-slate-300 text-sm">Native</span>
+            </div>
+            <div class="bg-primary-50 dark:bg-primary-900/20 rounded-lg px-6 py-4 shadow-sm flex flex-col items-center min-w-[120px]">
+              <span class="font-bold text-primary-600 dark:text-primary-500 text-lg">English</span>
+              <span class="text-slate-600 dark:text-slate-300 text-sm">Fluent</span>
+            </div>
+            <div class="bg-primary-50 dark:bg-primary-900/20 rounded-lg px-6 py-4 shadow-sm flex flex-col items-center min-w-[120px]">
+              <span class="font-bold text-primary-600 dark:text-primary-500 text-lg">Hindi</span>
+              <span class="text-slate-600 dark:text-slate-300 text-sm">Basic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="scroll-mt-20">
+      <h2 class="section-title flex flex-col items-center justify-center text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 dark:text-primary-500"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6z"></path><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"></path></svg>
+        <span>Get In Touch</span>
+      </h2>
+      <div class="text-center max-w-2xl mx-auto">
+        <p class="text-slate-600 dark:text-slate-300 mb-8 text-center">
+          I'm always open to discussing new opportunities, creative ideas, or ways to be part of an exciting project. Feel free to reach out to me.
+        </p>
+        <a href="mailto:contact@utkrish.com.np" class="inline-block bg-primary-600 text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-primary-500/50 break-all">
+          contact@utkrish.com.np
+        </a>
+        <div class="mt-8 flex flex-wrap justify-center items-center gap-4">
+          <a href="https://github.com/utkrishAcharya" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-500 transition-colors text-center">GitHub</a>
+          <span class="text-slate-300 dark:text-slate-700 text-center">|</span>
+          <a href="https://linkedin.com/in/utkrishacharya" target="_blank" class="text-slate-500 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-500 transition-colors text-center">LinkedIn</a>
+          <span class="text-slate-300 dark:text-slate-700 text-center">|</span>
+          <a href="tel:+9779768348490" class="text-slate-500 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-500 transition-colors whitespace-nowrap text-center">+977 9768348490</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-6">
+    <div class="max-w-5xl mx-auto px-6 text-center text-sm text-slate-500 dark:text-slate-400">
+      <p>&copy; <span id="current-year"></span> Utkrish Acharya. Made with ❤️ in Nepal.</p>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/theme.js"></script>
+  <script src="assets/scripts/ui.js"></script>
+</body>
+</html>
