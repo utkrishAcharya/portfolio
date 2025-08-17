@@ -1,5 +1,25 @@
 
-# Images
+
+# Global CORS for all assets
+/*
+  Access-Control-Allow-Origin: *
+
+# Security headers for all pages
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: document-domain=()
+
+# Cache control for static assets
+/assets/images/*
+  Cache-Control: public, max-age=31556952, immutable
+/assets/scripts/*
+  Cache-Control: public, max-age=31556952, immutable
+/assets/styles/*
+  Cache-Control: public, max-age=31556952, immutable
+
+# Content-Type for images
 /assets/images/*.jpg
   Content-Type: image/jpeg
 /assets/images/*.JPG
@@ -13,14 +33,20 @@
 /assets/images/*.heic
   Content-Type: image/heic
 
-# Scripts
+# Content-Type for scripts
 /assets/scripts/*.js
   Content-Type: application/javascript; charset=UTF-8
 
-# Styles
+# Content-Type for styles
 /assets/styles/*.css
   Content-Type: text/css; charset=UTF-8
 
-# Manifest (if present)
+# Content-Type for manifest
 /manifest.json
   Content-Type: application/manifest+json
+
+# Prevent indexing of preview/staging deployments
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
