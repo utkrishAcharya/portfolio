@@ -1,0 +1,26 @@
+
+# Images
+/assets/images/*.jpg
+  Content-Type: image/jpeg
+/assets/images/*.JPG
+  Content-Type: image/jpeg
+/assets/images/*.jpeg
+  Content-Type: image/jpeg
+/assets/images/*.png
+  Content-Type: image/png
+/assets/images/*.svg
+  Content-Type: image/svg+xml
+/assets/images/*.heic
+  Content-Type: image/heic
+
+# Scripts
+/assets/scripts/*.js
+  Content-Type: application/javascript; charset=UTF-8
+
+# Styles
+/assets/styles/*.css
+  Content-Type: text/css; charset=UTF-8
+
+# Manifest (if present)
+/manifest.json
+  Content-Type: application/manifest+json
