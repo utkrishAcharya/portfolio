@@ -1,52 +1,54 @@
+# -----------------------------
+# Consolidated and validated _headers for Cloudflare Pages
+# - Merges global headers into a single /* block to avoid duplication
+# - Uses Cloudflare Pages-compatible syntax: one path per block, indented headers
+# - Keeps preview/staging noindex rules scoped to pages.dev subdomains
+# -----------------------------
 
-
-# Global CORS for all assets
 /*
-  Access-Control-Allow-Origin: *
-
-# Security headers for all pages
-/*
+  # Security
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
   Permissions-Policy: document-domain=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 
-# Cache control for static assets
+  # Content Security Policy: keep this narrow, adjust if your site requires external resources
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https:;
+
+  # CORS (enable if you intentionally want other origins to access static assets)
+  Access-Control-Allow-Origin: *
+
+  # Small informational header (optional)
+  Server: Cloudflare Pages
+
+# Cache control for static, fingerprinted assets to improve repeat-visit performance
 /assets/images/*
   Cache-Control: public, max-age=31556952, immutable
+
 /assets/scripts/*
   Cache-Control: public, max-age=31556952, immutable
+
 /assets/styles/*
   Cache-Control: public, max-age=31556952, immutable
 
-# Content-Type for images
-/assets/images/*.jpg
-  Content-Type: image/jpeg
-/assets/images/*.JPG
-  Content-Type: image/jpeg
-/assets/images/*.jpeg
-  Content-Type: image/jpeg
-/assets/images/*.png
-  Content-Type: image/png
-/assets/images/*.svg
-  Content-Type: image/svg+xml
-/assets/images/*.heic
-  Content-Type: image/heic
-
-# Content-Type for scripts
-/assets/scripts/*.js
-  Content-Type: application/javascript; charset=UTF-8
-
-# Content-Type for styles
-/assets/styles/*.css
-  Content-Type: text/css; charset=UTF-8
-
-# Content-Type for manifest
+# If you serve a web app manifest, ensure correct content-type (this is optional; server often sets it)
 /manifest.json
   Content-Type: application/manifest+json
 
-# Prevent indexing of preview/staging deployments
+# Prevent indexing of preview/staging deployments only (keeps production indexable)
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
+
 https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex
+
+# Notes:
+# - Do NOT prefix the filename with an exclamation mark. The file must be named exactly '_headers'.
+# - To remove a header applied by a broader rule, use the detach operator inside a block with a leading '! '
+#   Example:
+#   /static/*
+#     Content-Security-Policy: default-src 'self'
+#   /static/special.png
+#     ! Content-Security-Policy
+# - Keep each line under 2000 characters and the file under the Pages limits (<=100 blocks recommended).
