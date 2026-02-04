@@ -32,15 +32,20 @@ if (yearSpan) {
 // Scroll animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
+    
     if (entry.isIntersecting) {
+      
       entry.target.classList.add('animate-fade-in-up');
+      
       entry.target.classList.remove('opacity-0');
     }
   });
 }, { threshold: 0.1 });
 
 document.querySelectorAll('section > *, section > div > *').forEach(el => {
+  
   el.classList.add('opacity-0');
+  
   observer.observe(el);
 });
 
