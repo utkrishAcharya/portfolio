@@ -41,6 +41,4 @@ themeToggleBtn.addEventListener('click', function() {
             document.documentElement.classList.add('dark');
             
             localStorage.setItem('color-theme', 'dark');
-        }
-    }
-});
+        } });
