@@ -31,6 +31,7 @@ if (yearSpan) {
 
 // Scroll animations
 const observer = new IntersectionObserver((entries) => {
+  
   entries.forEach(entry => {
     
     if (entry.isIntersecting) {
@@ -64,6 +65,5 @@ style.innerHTML = `
   }
   .animate-fade-in-up {
     animation: fade-in-up 0.8s ease-out forwards;
-  }
-`;
+  }`;
 document.head.appendChild(style);
