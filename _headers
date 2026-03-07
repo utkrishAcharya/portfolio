@@ -47,8 +47,10 @@ https://:version.:project.pages.dev/*
 # - Do NOT prefix the filename with an exclamation mark. The file must be named exactly '_headers'.
 # - To remove a header applied by a broader rule, use the detach operator inside a block with a leading '! '
 #   Example:
+
 #   /static/*
 #     Content-Security-Policy: default-src 'self'
 #   /static/special.png
+
 #     ! Content-Security-Policy
 # - Keep each line under 2000 characters and the file under the Pages limits (<=100 blocks recommended).
