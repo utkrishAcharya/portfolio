@@ -64,6 +64,7 @@ style.innerHTML = `
     to {
       opacity: 1;
       transform: translateY(0);
+      
     }
   }
   .animate-fade-in-up {
