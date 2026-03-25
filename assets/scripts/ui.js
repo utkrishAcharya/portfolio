@@ -55,6 +55,7 @@ const style = document.createElement('style');
 style.innerHTML = `
   @keyframes fade-in-up {
   
+  
     from {
       opacity: 0;
       transform: translateY(20px);
