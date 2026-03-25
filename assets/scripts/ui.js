@@ -59,6 +59,7 @@ style.innerHTML = `
     from {
       opacity: 0;
       transform: translateY(20px);
+      
     }
     to {
       opacity: 1;
