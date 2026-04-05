@@ -20,6 +20,7 @@ themeToggleBtn.addEventListener('click', function() {
     themeToggleDarkIcon.classList.toggle('hidden');
     
     
+    
     themeToggleLightIcon.classList.toggle('hidden');
 
     if (localStorage.getItem('color-theme')) {
