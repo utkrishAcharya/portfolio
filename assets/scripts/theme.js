@@ -9,6 +9,7 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
     
 } else {
     
+    
     document.documentElement.classList.remove('dark');
     
     themeToggleDarkIcon.classList.remove('hidden');
