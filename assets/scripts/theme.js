@@ -24,6 +24,7 @@ themeToggleBtn.addEventListener('click', function() {
     
     
     themeToggleLightIcon.classList.toggle('hidden');
+    
 
     if (localStorage.getItem('color-theme')) {
         
