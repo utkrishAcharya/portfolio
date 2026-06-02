@@ -29,6 +29,7 @@ themeToggleBtn.addEventListener('click', function() {
     if (localStorage.getItem('color-theme')) {
         
         if (localStorage.getItem('color-theme') === 'light') 
+            
         {
             document.documentElement.classList.add('dark');
             
