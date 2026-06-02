@@ -37,6 +37,7 @@ themeToggleBtn.addEventListener('click', function() {
             localStorage.setItem('color-theme', 'dark');
             
         } else {
+            
             document.documentElement.classList.remove('dark');
             
             localStorage.setItem('color-theme', 'light');
