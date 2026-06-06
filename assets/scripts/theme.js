@@ -43,6 +43,7 @@ themeToggleBtn.addEventListener('click', function() {
             localStorage.setItem('color-theme', 'light');
         }
     } else {
+        
         if (document.documentElement.classList.contains('dark')) {
             
             document.documentElement.classList.remove('dark');
